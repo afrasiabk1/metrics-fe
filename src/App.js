@@ -28,7 +28,7 @@ function App() {
     { title: "Bounce Rate %", field: "bounceRate" }
   ]
   useEffect(() => {
-    fetch("http://10.128.15.216:8080/metrics")
+    fetch("http://35.224.3.225:8080/metrics")
       .then(resp => resp.json())
       .then(resp => {
         setData(resp)
